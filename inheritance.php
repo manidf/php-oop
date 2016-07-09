@@ -1,12 +1,18 @@
 <?php
   // contract, reusable attributes
   abstract class Shape {
+
     protected $color;
-    public function _constuctor($color)
+
+    public function _constuctor($color = 'red')
     {
       $this->color= $color;
     }
 
+    public function getColor()
+    {
+      return $this->color;
+    }
   }
 
   class Square extends Shape {
@@ -32,5 +38,5 @@
 
   }
 
-  new Square(red);
-  echo (new Triangle)->getArea();
+  // new Square(red);
+  echo(new Square())->getColor();
