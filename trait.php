@@ -1,21 +1,21 @@
 
 <?php
 
-trait OwnerTrait {
-	public function owner()
-	{
-		// ...
-	}
+trait OwnerTrait
+{
+    public function owner()
+    {
+        // ...
+    }
 }
 
-class Thread {
+class Thread
+{
 
-	use OwnerTrait;
-
+    use OwnerTrait;
 }
 
-class Comment {
-
+class Comment
+{
 	use OwnerTrait;
-
 }
