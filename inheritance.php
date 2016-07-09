@@ -1,21 +1,36 @@
 <?php
-
-	class Shape {
-
-		public function getArea()
+	// contract, reusable attributes
+	abstract class Shape {
+		protected $color;
+		public function _constuctor($color)
 		{
-			return pow($this->length, 2);
+			$this->color= $color;
 		}
 
 	}
 
 	class Square extends Shape {
+		protected $length = 60;
 
+		public function getArea()
+		{
+			return pow($this->length, 2);
+		}
 	}
 
 	class Triangle extends Shape {
+		protected $base = 4;
+		protected $height = 7;
+
+		public function getArea()
+		{
+			return .5 * $this->base * $this->height;
+		}
+	}
+
+	class Circle exteds Shape {
 
 	}
 
-
-	echo (new Square)->getArea();
+	new Square(red);
+	// echo (new Triangle)->getArea();
