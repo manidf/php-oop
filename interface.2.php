@@ -1,21 +1,40 @@
 <?php
 
-// interface aka contract
-interface Animal {
-    public function communicate();
+// code to an interface
+interface Logger {
+    public function execute($message);
 }
 
-class Dog implements Animal {
-    public function communicate()
+class LogToFile implements Logger {
+    public function execute($message)
     {
-        return 'bark';
+        var_dump('log the message to a file: ' .$message);
     }
 }
 
-class Cat implements Animal {
-    public function communicate()
+class LogToDatabase implements Logger {
+    public function execute($message)
     {
-        return 'meow';
+        var_dump('log the message to a database ' .$message);
     }
 }
 
+class UsersController {
+    protected $logger;
+
+    public function __construct(Logger $logger)
+    {
+        $this->logger = $logger;
+    }
+
+    public function show()
+    {
+        $user = 'MannyF';
+        // log this information
+        $this->logger->execute($user);
+    }
+}
+
+$controller = new UsersController(new LogToDatabase);
+
+$controller->show();
