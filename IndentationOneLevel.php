@@ -15,12 +15,9 @@ class BankAccounts {
 
         foreach ($this->accounts as $account)
         {
-            if ($account->type() == $accountType)
+            if ($account->type() == $accountType && $account->isActive())
             {
-                if ($account->isActive())
-                {
-                    $filtered[] = $account;
-                }
+                $filtered[] = $account;
             }
         }
 
