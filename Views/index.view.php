@@ -16,9 +16,26 @@
     <div class="colourblocking"></div>
     <div class="title-container">
 
-    <h2>
+    <h4>
         <?= $greeting; ?>
-    </h2>
+    </h4>
+
+    <ul>
+    <?php
+        foreach($names as $name) {
+            echo "<li>$name</li>";
+        }
+    ?>
+    </ul>
+
+    <h6>Animals</h6>
+    <ul>
+        <?php
+            foreach($animals as $animal) {
+                echo "<li>$animal</li>";
+            }
+        ?>
+    </ul>
 
     <p class="copy copy--droid">
         
