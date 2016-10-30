@@ -16,6 +16,13 @@ $person = [
  **/
 $person['name'] = 'Mannuel Ferreira';
 
+/*
+ * remove an item from an array
+ **/
+unset($person['hair']);
+
+die(var_dump( $person ) );
+
 require 'index.view.php';
 
 
