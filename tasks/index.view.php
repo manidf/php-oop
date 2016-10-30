@@ -7,7 +7,6 @@
 <body>
 
 <h1>Task for the day</h1>
-
 <ul>
     <li>
         <strong>Name:</strong> <?= $task['title']; ?>
@@ -15,7 +14,7 @@
     <li>
         <strong>Due:</strong> <?= $task['due']; ?>
     </li>
-        <li>
+    <li>
         <strong>Person Responsible:</strong> <?= $task['assigned_to']; ?>
     </li>
     <li>
