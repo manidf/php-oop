@@ -23,6 +23,11 @@ class BankAccounts {
 
         return $filtered;
     }
+
+    private function isOfType($accountType, $account)
+    {
+        return $account->type() == $accountType && $account->isActive
+    }
 }
 
 class Account {
