@@ -26,7 +26,7 @@ class BankAccounts {
 
     private function isOfType($accountType, $account)
     {
-        return $account->type() == $accountType && $account->isActive
+        return $account->type() == $accountType && $account->isActive;
     }
 }
 
