@@ -36,7 +36,7 @@ $tasks = [
     new Task('Clean house'), // 2
 ];
 
-$tasks[0]->isComplete();
+$tasks[0]->complete();
 
 // $task = new Task('Go to the store');
 // an instance of a CLASS is in OBJECT. We can assign a PROPERTY to the current instance of the CLASS.
