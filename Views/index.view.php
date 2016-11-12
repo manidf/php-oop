@@ -7,11 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Fira+Sans:500|Source+Sans+Pro:400,600|Space+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
     <style>
-    
+
     </style>
 </head>
 <body>
-    
+
     <div class="container">
     <div class="colourblocking"></div>
     <div class="title-container">
@@ -22,8 +22,8 @@
 
     <ul>
     <?php
-        foreach($names as $name) {
-            echo "<li>$name</li>";
+    foreach($names as $name) {
+        echo "<li>$name</li>";
         }
     ?>
     </ul>
@@ -38,7 +38,7 @@
     </ul>
 
     <p class="copy copy--droid">
-        
+
     </p>
     </div>
     <footer> </footer>
