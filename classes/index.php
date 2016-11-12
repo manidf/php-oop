@@ -4,6 +4,7 @@ require 'functions.php';
 
 class Task {
 
+    // SET PROPERTIES
     // define visibiility, who ever is not part of this CLASS cannot access this PROPERTY
     public $description;
 
@@ -31,6 +32,8 @@ class Task {
 }
 
 $tasks = [
+    // newup a property of a CLASS
+    // any ARGUMENTS will be sent to the CONSTRUCTOR
     new Task('Go to the store'), // 0
     new Task('Finish work'), // 1
     new Task('Clean house'), // 2
