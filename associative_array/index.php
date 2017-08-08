@@ -6,8 +6,8 @@
  **/
 
 $person = [
-    'age' => 34,
-    'hair' => 'black',
+    'age'    => 34,
+    'hair'   => 'black',
     'career' => 'web developer',
 ];
 
@@ -21,8 +21,6 @@ $person['name'] = 'Mannuel Ferreira';
  **/
 unset($person['hair']);
 
-die(var_dump( $person ) );
+die(var_dump($person));
 
 require 'index.view.php';
-
-

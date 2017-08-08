@@ -11,11 +11,10 @@ trait OwnerTrait
 
 class Thread
 {
-
     use OwnerTrait;
 }
 
 class Comment
 {
-	use OwnerTrait;
+    use OwnerTrait;
 }

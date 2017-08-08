@@ -8,7 +8,7 @@
 
 <ul>
     <!-- Loop though an array foreach name in the names array give me a name -->
-    <?php foreach($names as $name) : ?>
+    <?php foreach ($names as $name) : ?>
         <li>
            <?= $name; ?>
         </li>

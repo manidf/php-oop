@@ -1,24 +1,25 @@
 
 <?php
 
-class Task {
-	public $description;
-	public $title;
+class Task
+{
+    public $description;
+    public $title;
 
-	public $completed = false;
+    public $completed = false;
 
-	// method on an object
-	public function __construct($description, $title)
-	{
-		$this->description = $description; // assign value to the 'description' property
-		$this->title = $title;
-	}
+    // method on an object
+    public function __construct($description, $title)
+    {
+        $this->description = $description; // assign value to the 'description' property
+        $this->title = $title;
+    }
 
-	// public method to expose completed property
-	public function complete()
-	{
-		$this->completed = true;
-	}
+    // public method to expose completed property
+    public function complete()
+    {
+        $this->completed = true;
+    }
 }
 
 $task = new Task('Learn OOP', 'This is the title');

@@ -1,25 +1,29 @@
 <?php
 
 // code to an interface
-interface Logger {
+interface Logger
+{
     public function execute($message);
 }
 
-class LogToFile implements Logger {
+class LogToFile implements Logger
+{
     public function execute($message)
     {
-        var_dump('log the message to a file: ' .$message);
+        var_dump('log the message to a file: '.$message);
     }
 }
 
-class LogToDatabase implements Logger {
+class LogToDatabase implements Logger
+{
     public function execute($message)
     {
-        var_dump('log the message to a database ' .$message);
+        var_dump('log the message to a database '.$message);
     }
 }
 
-class UsersController {
+class UsersController
+{
     protected $logger;
 
     public function __construct(Logger $logger)
@@ -35,6 +39,6 @@ class UsersController {
     }
 }
 
-$controller = new UsersController(new LogToDatabase);
+$controller = new UsersController(new LogToDatabase());
 
 $controller->show();
