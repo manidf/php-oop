@@ -19,7 +19,7 @@
     </li>
     <li>
         <strong>Status:</strong>
-        <?php if($task['completed']) :?>
+        <?php if ($task['completed']) :?>
             &#9989;
         <?php else : ?>
             Incomplete

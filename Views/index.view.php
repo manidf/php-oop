@@ -22,16 +22,16 @@
 
     <ul>
     <?php
-    foreach($names as $name) {
+    foreach ($names as $name) {
         echo "<li>$name</li>";
-        }
+    }
     ?>
     </ul>
 
     <h6>Animals</h6>
     <ul>
         <?php
-            foreach($animals as $animal) {
+            foreach ($animals as $animal) {
                 echo "<li>$animal</li>";
             }
         ?>

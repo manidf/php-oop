@@ -7,7 +7,7 @@
 <body>
 
 <ul>
-    <?php foreach($person as $key => $feature) : ?>
+    <?php foreach ($person as $key => $feature) : ?>
         <li>
            <strong><?= $key; ?></strong>  <?= $feature; ?>
         </li>

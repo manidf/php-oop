@@ -1,22 +1,20 @@
 <?php
 
-class BankAccounts {
-	protected $accounts;
+class BankAccounts
+{
+    protected $accounts;
 
-	function __construct($accounts)
-	{
-		$this->accounts = $accounts;
-	}
-
-	public function filterBy($accountType)
+    public function __construct($accounts)
     {
+        $this->accounts = $accounts;
+    }
 
+    public function filterBy($accountType)
+    {
         $filtered = [];
 
-        foreach ($this->accounts as $account)
-        {
-            if ($account->type() == $accountType && $account->isActive())
-            {
+        foreach ($this->accounts as $account) {
+            if ($account->type() == $accountType && $account->isActive()) {
                 $filtered[] = $account;
             }
         }
@@ -30,8 +28,8 @@ class BankAccounts {
     }
 }
 
-class Account {
-
+class Account
+{
     protected $type;
 
     private function __construct($type)
@@ -54,7 +52,6 @@ class Account {
         return true;
     }
 }
-
 
 $accounts = [
     Account::open('checking'),

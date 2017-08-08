@@ -1,7 +1,9 @@
-<?php namespace Acme;
+<?php
 
-class AuthController implements RespondsToUserRegistration {
+namespace Acme;
 
+class AuthConstructor implements RespondsToUserRegistration
+{
     protected $registration;
 
     public function __construct(RegisterUser $registration)
@@ -19,8 +21,8 @@ class AuthController implements RespondsToUserRegistration {
     public function userRegisteredSuccesfully()
     {
         var_dump('created successfully. redirected');
-
     }
+
     public function userRegisteredFailed()
     {
         var_dump('ask user to try again');

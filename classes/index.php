@@ -2,8 +2,8 @@
 
 require 'functions.php';
 
-class Task {
-
+class Task
+{
     // SET PROPERTIES
     // define visibiility, who ever is not part of this CLASS cannot access this PROPERTY
     public $description;

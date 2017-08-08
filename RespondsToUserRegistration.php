@@ -1,8 +1,10 @@
-<?php namespace  Acme;
+<?php
 
-interface RespondsToUserRegistration {
+namespace  Acme;
 
+interface RespondsToUserRegistration
+{
     public function userRegisteredSuccesfully();
-    public function userRegisteredFailed();
 
+    public function userRegisteredFailed();
 }

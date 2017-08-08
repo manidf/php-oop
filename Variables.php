@@ -28,7 +28,7 @@
     </h1>
 
     <h2>
-        <?= "Hello, " . htmlspecialchars($_GET['name']); ?>
+        <?= 'Hello, '.htmlspecialchars($_GET['name']); ?>
     </h2>
 
     <p class="copy copy--droid">

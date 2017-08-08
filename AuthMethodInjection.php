@@ -1,11 +1,12 @@
-<?php namespace Acme;
+<?php
 
-class AuthController {
+namespace Acme;
 
+class AuthMethodInjection
+{
     //method injection
     public function register(RegisterUser $registration)
     {
         $registration->execute();
     }
 }
-

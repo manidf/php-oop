@@ -1,6 +1,7 @@
 <?php
 
-function dd($data) {
+function dd($data)
+{
     echo '<pre>';
     die(var_dump($data));
     echo '</pre>';
@@ -9,7 +10,7 @@ function dd($data) {
 function connectDB()
 {
     try {
-    // PHP DATA OBJECT
+        // PHP DATA OBJECT
     return new PDO('mysql:host=127.0.0.1;dbname=mytodos', 'root', 'root');
     } catch (PDOException $e) {
         die($e->getMessage());

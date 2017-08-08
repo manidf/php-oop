@@ -6,7 +6,7 @@ $names = [
     'Jeb',
     'Jay',
     'Juicy',
-    'Jelo'
+    'Jelo',
 ];
 
 $animals = [
@@ -14,7 +14,7 @@ $animals = [
     'cat',
     'elephant',
     'snake',
-    'bear'
+    'bear',
 ];
 
 $greeting = 'Hello there...';

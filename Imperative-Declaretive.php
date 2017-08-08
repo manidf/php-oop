@@ -3,5 +3,4 @@
 function getUserEmails($users)
 {
     $emails = [];
-
 }

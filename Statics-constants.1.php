@@ -1,6 +1,7 @@
 <?php
 
-class Person {
+class Person
+{
     public $age = 1;
 
     public function haveBirthday()
@@ -14,10 +15,10 @@ class Person {
     }
 }
 
-$manny = new Person;
+$manny = new Person();
 $manny->haveBirthday();
 
-$jane = new Person;
+$jane = new Person();
 $jane->haveBirthday();
 
 echo $manny->age;
