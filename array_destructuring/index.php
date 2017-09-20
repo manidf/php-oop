@@ -6,6 +6,7 @@ $people = [
 ];
 
 foreach ($person as $person) {
-
-    var_dump($person[0] . '' . $person[1]);
+    [$first, $last] = $person;
+    var_dump({$first} {$last});
+    //var_dump($person[0] . '' . $person[1]);
 }
